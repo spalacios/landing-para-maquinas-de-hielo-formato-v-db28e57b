@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Máquinas Expendedoras de Hielo 24/7 | Oportunidad de Inversión Automática</title>
+  <meta name="description" content="Landing page comercial para la venta de máquinas expendedoras de hielo automáticas 24/7 en Argentina. Modelo de negocio autónomo sin personal continuo.">
+  <style>
+    /* Reset & Base Styles */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --primary: #0284c7;
+      --primary-dark: #0369a1;
+      --primary-light: #e0f2fe;
+      --accent: #06b6d4;
+      --accent-hover: #0891b2;
+      --dark: #0f172a;
+      --slate: #1e293b;
+      --muted: #64748b;
+      --light-bg: #f8fafc;
+      --border: #e2e8f0;
+      --white: #ffffff;
+      --whatsapp: #16a34a;
+      --whatsapp-hover: #15803d;
+      --pending-badge-bg: #fef3c7;
+      --pending-badge-text: #92400e;
+      --font-stack: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    }
+
+    body {
+      font-family: var(--font-stack);
+      color: var(--slate);
+      background-color: var(--light-bg);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Layout Containers */
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    section {
+      padding: 4rem 0;
+    }
+
+    @media (max-width: 768px) {
+      section {
+        padding: 2.5rem 0;
+      }
+    }
+
+    /* Typography */
+    h1, h2, h3, h4 {
+      color: var(--dark);
+      font-weight: 700;
+      line-height: 1.25;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 4vw, 3.25rem);
+      margin-bottom: 1.25rem;
+    }
+
+    h2 {
+      font-size: clamp(1.6rem, 3vw, 2.375rem);
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    h3 {
+      font-size: 1.35rem;
+      margin-bottom: 0.75rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      color: var(--muted);
+      max-width: 750px;
+      margin: 0 auto 3rem auto;
+      font-size: 1.1rem;
+    }
+
+    /* Header & Navigation */
+    .top-bar {
+      background-color: var(--dark);
+      color: #94a3b8;
+      font-size: 0.85rem;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #334155;
+    }
+
+    .top-bar-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .site-header {
+      background-color: var(--white);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 4.5rem;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 1.35rem;
+      color: var(--dark);
+    }
+
+    .logo svg {
+      width: 2rem;
+      height: 2rem;
+      color: var(--primary);
+    }
+
+    .logo span {
+      color: var(--primary);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.75rem;
+      list-style: none;
+      align-items: center;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--slate);
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+
+    @media (max-width: 900px) {
+      .nav-links {
+        display: none;
+      }
+    }
+
+    /* Buttons & CTAs */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.85rem 1.75rem;
+      border-radius: 0.5rem;
+      font-weight: 600;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+      border: 1px solid transparent;
+    }
+
+    .btn-whatsapp {
+      background-color: var(--whatsapp);
+      color: var(--white);
+    }
+
+    .btn-whatsapp:hover {
+      background-color: var(--whatsapp-hover);
+      box-shadow: 0 4px 12px rgba(22, 163, 74, 0.3);
+    }
+
+    .btn-primary {
+      background-color: var(--primary);
+      color: var(--white);
+    }
+
+    .btn-primary:hover {
+      background-color: var(--primary-dark);
+      box-shadow: 0 4px 12px rgba(2, 132, 199, 0.3);
+    }
+
+    .btn-outline {
+      background-color: transparent;
+      border-color: var(--border);
+      color: var(--slate);
+    }
+
+    .btn-outline:hover {
+      background-color: var(--light-bg);
+      border-color: var(--muted);
+    }
+
+    .btn-full {
+      width: 100%;
+    }
+
+    /* Badges */
+    .badge {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .badge-primary {
+      background-color: var(--primary-light);
+      color: var(--primary-dark);
+    }
+
+    .badge-pending {
+      background-color: var(--pending-badge-bg);
+      color: var(--pending-badge-text);
+      font-size: 0.75rem;
+      text-transform: none;
+      letter-spacing: normal;
+    }
+
+    .badge-verified {
+      background-color: #dcfce7;
+      color: #166534;
+      font-size: 0.75rem;
+      text-transform: none;
+      letter-spacing: normal;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      color: var(--white);
+      padding: 5rem 0 6rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -10%;
+      right: -5%;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(6,182,212,0.15) 0%, rgba(15,23,42,0) 70%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    @media (max-width: 992px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      .hero-ctas {
+        justify-content: center;
+      }
+    }
+
+    .hero h1 {
+      color: var(--white);
+    }
+
+    .hero p {
+      color: #cbd5e1;
+      font-size: 1.15rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero-tags {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+    }
+
+    @media (max-width: 992px) {
+      .hero-tags {
+        justify-content: center;
+      }
+    }
+
+    .hero-ctas {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .hero-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 1rem;
+      padding: 2rem;
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+    }
+
+    .hero-card h3 {
+      color: var(--white);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .stat-list {
+      list-style: none;
+    }
+
+    .stat-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.75rem 0;
+      border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+      font-size: 0.95rem;
+    }
+
+    .stat-item:last-child {
+      border-bottom: none;
+    }
+
+    .stat-label {
+      color: #94a3b8;
+    }
+
+    .stat-val {
+      font-weight: 600;
+      color: var(--white);
+    }
+
+    /* Features Section */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+    }
+
+    .feature-card {
+      background-color: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 0.75rem;
+      padding: 2rem;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+    }
+
+    .feature-icon {
+      width: 3rem;
+      height: 3rem;
+      background-color: var(--primary-light);
+      color: var(--primary);
+      border-radius: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.25rem;
+    }
+
+    .feature-icon svg {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+
+    /* How It Works Section */
+    .bg-white {
+      background-color: var(--white);
+    }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 1.5rem;
+      position: relative;
+    }
+
+    .step-card {
+      background: var(--light-bg);
+      padding: 1.75rem;
+      border-radius: 0.75rem;
+      border-left: 4px solid var(--primary);
+      position: relative;
+    }
+
+    .step-number {
+      font-size: 2rem;
+      font-weight: 800;
+      color: rgba(2, 132, 199, 0.2);
+      position: absolute;
+      top: 1rem;
+      right: 1.25rem;
+    }
+
+    .step-card h3 {
+      font-size: 1.15rem;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Specs & Technical Section */
+    .specs-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    @media (max-width: 850px) {
+      .specs-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .specs-table-box {
+      background-color: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 0.75rem;
+      overflow: hidden;
+    }
+
+    .specs-header {
+      background-color: var(--dark);
+      color: var(--white);
+      padding: 1.25rem 1.5rem;
+    }
+
+    .specs-header h3 {
+      color: var(--white);
+      margin: 0;
+      font-size: 1.2rem;
+    }
+
+    .specs-list {
+      list-style: none;
+    }
+
+    .specs-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 1.5rem;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.95rem;
+    }
+
+    .specs-row:last-child {
+      border-bottom: none;
+    }
+
+    .specs-label {
+      font-weight: 600;
+      color: var(--slate);
+    }
+
+    .specs-value {
+      color: var(--muted);
+      text-align: right;
+    }
+
+    /* Location Opportunities */
+    .locations-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .location-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+
+    .location-icon {
+      background-color: #ecfeff;
+      color: var(--accent);
+      padding: 0.75rem;
+      border-radius: 0.5rem;
+      flex-shrink: 0;
+    }
+
+    .location-icon svg {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+
+    .location-content h3 {
+      font-size: 1.05rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .location-content p {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    /* Executive Proposal & Management Plan */
+    .exec-box {
+      background-color: #f0f9ff;
+      border: 1px solid #bae6fd;
+      border-radius: 1rem;
+      padding: 2.5rem;
+      margin-top: 2rem;
+    }
+
+    .exec-header {
+      margin-bottom: 1.5rem;
+      border-bottom: 2px solid #7dd3fc;
+      padding-bottom: 1rem;
+    }
+
+    .exec-header h3 {
+      color: var(--primary-dark);
+      font-size: 1.4rem;
+    }
+
+    .exec-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .exec-card {
+      background: var(--white);
+      padding: 1.25rem;
+      border-radius: 0.5rem;
+      border: 1px solid #e0f2fe;
+    }
+
+    .exec-card h4 {
+      color: var(--primary-dark);
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .exec-card p, .exec-card ul {
+      font-size: 0.875rem;
+      color: var(--slate);
+      margin: 0;
+    }
+
+    .exec-card ul {
+      padding-left: 1.25rem;
+    }
+
+    .exec-card li {
+      margin-bottom: 0.35rem;
+    }
+
+    /* Lead Contact Area */
+    .contact-card {
+      background-color: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 1rem;
+      padding: 3rem;
+      box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05);
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 768px) {
+      .contact-card {
+        padding: 1.75rem;
+      }
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5rem;
+    }
+
+    @media (max-width: 768px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .contact-info-side h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .contact-info-side p {
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-method {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .contact-icon {
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      background-color: var(--primary-light);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .contact-icon svg {
+      width: 1.25rem;
+      height: 1.25rem;
+    }
+
+    /* Form Representation (Static styling without active script transmission) */
+    .form-group {
+      margin-bottom: 1.25rem;
+    }
+
+    .form-label {
+      display: block;
+      font-weight: 600;
+      font-size: 0.9rem;
+      margin-bottom: 0.35rem;
+      color: var(--slate);
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 1px solid var(--border);
+      border-radius: 0.5rem;
+      font-family: inherit;
+      font-size: 0.95rem;
+      background-color: #fafafa;
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: var(--primary);
+    }
+
+    .form-note {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-top: 0.75rem;
+      text-align: center;
+    }
+
+    /* Floating WhatsApp Button */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 1.5rem;
+      right: 1.5rem;
+      background-color: var(--whatsapp);
+      color: var(--white);
+      width: 3.75rem;
+      height: 3.75rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+      z-index: 999;
+      text-decoration: none;
+      transition: transform 0.2s, background-color 0.2s;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.08);
+      background-color: var(--whatsapp-hover);
+    }
+
+    .whatsapp-float svg {
+      width: 2.25rem;
+      height: 2.25rem;
+      fill: currentColor;
+    }
+
+    /* Footer */
+    footer {
+      background-color: var(--dark);
+      color: #94a3b8;
+      padding: 3rem 0 2rem 0;
+      font-size: 0.9rem;
+      border-top: 1px solid #1e293b;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .footer-brand {
+      color: var(--white);
+      font-weight: 700;
+      font-size: 1.2rem;
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .footer-brand svg {
+      width: 1.5rem;
+      height: 1.5rem;
+      color: var(--primary);
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-links a {
+      color: #94a3b8;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover {
+      color: var(--white);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #1e293b;
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Info Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-flex">
+      <div>
+        <strong>Proyecto Hielo Argentina:</strong> Modelo Comercial de Expendedoras Automáticas 24/7
+      </div>
+      <div>
+        <span>Infraestructura Web $0 (Free Tier GitHub / Vercel)</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+          <path d="M12 2l3 3M12 2L9 5M12 22l3-3M12 22l-3 3"/>
+        </svg>
+        Glaciar<span>Vending</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#beneficios">Beneficios</a></li>
+        <li><a href="#funcionamiento">Cómo Funciona</a></li>
+        <li><a href="#especificaciones">Ficha Técnica</a></li>
+        <li><a href="#ubicaciones">Ubicaciones</a></li>
+        <li><a href="#estrategia">Plan de Negocio</a></li>
+      </ul>
+
+      <a href="https://wa.me/5491100000000?text=Hola,%20busco%20informacion%20sobre%20las%20maquinas%20expendedoras%20de%20hielo" class="btn btn-whatsapp" target="_blank" rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.572-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+        </svg>
+        WhatsApp Comercial
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="hero-tags">
+          <span class="badge badge-primary">Negocio Automatizado 24/7</span>
+          <span class="badge badge-primary">Mercado Argentina</span>
+          <span class="badge badge-pending">Validación MVP Costo $0</span>
+        </div>
+        <h1>Máquinas Expendedoras de Hielo Automáticas</h1>
+        <p>
+          Invierta en una solución comercial autónoma que fabrica, embolsa y vende hielo las 24 horas del día. Sin necesidad de personal permanente en el punto de venta y con gestión remota.
+        </p>
+        <div class="hero-ctas">
+          <a href="https://wa.me/5491100000000?text=Hola,%20quiero%20consultar%20por%20las%20maquinas%20expendedoras%20de%20hielo" class="btn btn-whatsapp" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.572-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+            </svg>
+            Consultar por WhatsApp
+          </a>
+          <a href="#contacto" class="btn btn-outline" style="color: white; border-color: rgba(255,255,255,0.3);">
+            Solicitar Información
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <h3>Resumen del Modelo</h3>
+        <ul class="stat-list">
+          <li class="stat-item">
+            <span class="stat-label">Modalidad Operativa</span>
+            <span class="stat-val">Autónoma 24/7</span>
+          </li>
+          <li class="stat-item">
+            <span class="stat-label">Requerimiento Personal</span>
+            <span class="stat-val">Sin empleados continuos</span>
+          </li>
+          <li class="stat-item">
+            <span class="stat-label">Insumo Principal</span>
+            <span class="stat-val">Agua de red + Energía</span>
+          </li>
+          <li class="stat-item">
+            <span class="stat-label">Formato de Entrega</span>
+            <span class="stat-val">Bolsa / Granel</span>
+          </li>
+          <li class="stat-item">
+            <span class="stat-label">Especificaciones Téc.</span>
+            <span class="stat-val"><span class="badge badge-pending">A confirmar según fabricante</span></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Benefits / Value Proposition Section -->
+  <section id="beneficios">
+    <div class="container">
+      <h2>Ventajas Principales del Negocio de Vending de Hielo</h2>
+      <p class="section-subtitle">
+        El modelo de vending de hielo combina la venta automatizada de consumo masivo con una estructura de costos fijos reducida.
+      </p>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3>Disponibilidad 24 horas</h3>
+          <p>La máquina funciona de manera ininterrumpida los 365 días del año, captando ventas nocturnas, feriados y momentos de alta demanda.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+          </div>
+          <h3>Sin Necesidad de Personal</h3>
+          <p>El ciclo de fabricación, purificación, embolsado y entrega al cliente es totalmente automático. Minimiza la gestión operativa presencial.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5m3 0h1M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+            </svg>
+          </div>
+          <h3>Sin Logística de Transporte</h3>
+          <p>El hielo se produce directamente en el lugar de venta final. Se eliminan los costos de camiones refrigerados, fletes y pérdidas por derretimiento en traslado.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3>Producto de Alta Recurrencia</h3>
+          <p>El hielo es un insumo de consumo masivo en eventos, gastronomía, turismo, pesca, estaciones de servicio y uso domiciliario continuo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it Works Section -->
+  <section id="funcionamiento" class="bg-white">
+    <div class="container">
+      <h2>¿Cómo Funciona el Negocio Automatizado?</h2>
+      <p class="section-subtitle">
+        Un proceso simplificado paso a paso diseñado para operar de forma transparente y eficiente.
+      </p>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <span class="step-number">01</span>
+          <h3>Instalación & Conexión</h3>
+          <p>Se ubica el equipo en una zona de alto tránsito con acceso a la red de agua potable y conexión eléctrica apta.</p>
+        </div>
+
+        <div class="step-card">
+          <span class="step-number">02</span>
+          <h3>Filtrado & Producción</h3>
+          <p>El sistema interno purifica el agua mediante filtros integrados y fabrica el hielo en condiciones higiénicas controladas.</p>
+        </div>
+
+        <div class="step-card">
+          <span class="step-number">03</span>
+          <h3>Cobro Automático</h3>
+          <p>El consumidor selecciona la cantidad deseada y realiza el pago mediante los medios de cobro habilitados en la máquina.</p>
+        </div>
+
+        <div class="step-card">
+          <span class="step-number">04</span>
+          <h3>Embolsado y Despacho</h3>
+          <p>La máquina embolsa y dispensa el producto automáticamente listo para llevar en pocos segundos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Characteristics (Verified & Pending Specs) -->
+  <section id="especificaciones">
+    <div class="container">
+      <h2>Ficha Técnica y Aspectos del Equipo</h2>
+      <p class="section-subtitle">
+        Transparencia informativa: los datos marcados como pendientes serán confirmados formalmente según la ficha técnica del fabricante seleccionado.
+      </p>
+
+      <div class="specs-grid">
+        <div class="specs-table-box">
+          <div class="specs-header">
+            <h3>Características Verificadas</h3>
+          </div>
+          <ul class="specs-list">
+            <li class="specs-row">
+              <span class="specs-label">Modalidad de Operación</span>
+              <span class="specs-value">Vending 100% Automático 24/7</span>
+            </li>
+            <li class="specs-row">
+              <span class="specs-label">Sistema de Purificación</span>
+              <span class="specs-value">Filtros de agua integrados</span>
+            </li>
+            <li class="specs-row">
+              <span class="specs-label">Entrada de Insumo</span>
+              <span class="specs-value">Conexión directa a red de agua</span>
+            </li>
+            <li class="specs-row">
+              <span class="specs-label">Despacho de Producto</span>
+              <span class="specs-value">En bolsa o directamente a conservadora</span>
+            </li>
+            <li class="specs-row">
+              <span class="specs-label">Supervisión Operativa</span>
+              <span class="specs-value">Telemetría y control a distancia</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="specs-table-box">
+          <div class="specs-header" style="background-color: var(--slate);">
+            <h3>Especificaciones de Modelo (A Validar)</h3>
+          </div>
+          <ul class="specs-list">
+            <li class="specs-row">
+              <span class="specs-label">Capacidad de Producción Diaria</span>
+              <span class="specs-value"><span class="badge badge-pending">Pendiente de confirmación</span></span>
+            </li>
+            <li class="specs-row">
+              <span class="specs-label">Capacidad del Tanque de Almacenamiento</span>
+              <span class="specs-value"><span class="badge badge-pending">Pendiente de confirmación</span></span>
+            </li>
+            <li class="specs-row">
+              <span class="specs-label">Consumo Eléctrico Promedio</span>
+              <span class="specs-value"><span class="badge badge-pending">Pendiente de confirmación</span></span>
+            </li>
+            <li class="specs-row">
+              <span class="specs-label">Dimensiones Fisicas (An/Al/Pr)</span>
+              <span class="specs-value"><span class="badge badge-pending">Pendiente de confirmación</span></span>
+            </li>
+            <li class="specs-row">
+              <span class="specs-label">Sistemas de Pago Soportados</span>
+              <span class="specs-value"><span class="badge badge-pending">A integrar según mercado AR</span></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Strategic Locations -->
+  <section id="ubicaciones" class="bg-white">
+    <div class="container">
+      <h2>Ubicaciones Comerciales Estratégicas en Argentina</h2>
+      <p class="section-subtitle">
+        Puntos de alto flujo de clientes potenciales para la instalación de unidades de venta de hielo.
+      </p>
+
+      <div class="locations-grid">
+        <div class="location-card">
+          <div class="location-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+            </svg>
+          </div>
+          <div class="location-content">
+            <h3>Estaciones de Servicio</h3>
+            <p>Rutas nacionales y accesos urbanos con afluencia vehicular constante durante el día y la noche.</p>
+          </div>
+        </div>
+
+        <div class="location-card">
+          <div class="location-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 00-9.78 2.096A4.001 4.001 0 003 15z"/>
+            </svg>
+          </div>
+          <div class="location-content">
+            <h3>Marinas & Puertos Náuticos</h3>
+            <p>Zonas de embarque de lanchas, pesca deportiva y deportes acuáticos con alto requerimiento de hielo.</p>
+          </div>
+        </div>
+
+        <div class="location-card">
+          <div class="location-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707"/>
+            </svg>
+          </div>
+          <div class="location-content">
+            <h3>Ciudades Turísticas & Costeras</h3>
+            <p>Puntos de alta demanda estival, balnearios, campings y complejos de cabañas.</p>
+          </div>
+        </div>
+
+        <div class="location-card">
+          <div class="location-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5m3 0h1M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+            </svg>
+          </div>
+          <div class="location-content">
+            <h3>Centros Comerciales & Stripmalls</h3>
+            <p>Paseos de compras al aire libre, avenidas gastronómicas y zonas residenciales de alta densidad.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interdepartmental Strategy Plan (Presupuesto $0 / Free Tier Strategy) -->
+  <section id="estrategia">
+    <div class="container">
+      <h2>Plan Comercial y Arquitectura Técnica (Costo USD 0)</h2>
+      <p class="section-subtitle">
+        Síntesis ejecutiva de las gerencias para la validación del proyecto en el mercado argentino utilizando infraestructura sin costos fijos iniciales de software.
+      </p>
+
+      <div class="exec-box">
+        <div class="exec-header">
+          <h3>Estrategia Interdepartamental Integrada</h3>
+          <p style="margin: 0; color: var(--muted); font-size: 0.9rem;">
+            Aprobada para fase MVP de prospección y captación de leads en Argentina.
+          </p>
+        </div>
+
+        <div class="exec-grid">
+          <div class="exec-card">
+            <h4>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1-1-1V2zm2 3v7h12V5H2zm1-2v1h10V3H3z"/>
+              </svg>
+              1. Gerencia Comercial
+            </h4>
+            <ul>
+              <li><strong>Público Objetivo:</strong> Emprendedores, inversores y comercios con espacio físico.</li>
+              <li><strong>Propuesta de Valor:</strong> Negocio de venta automática 24/7 sin personal.</li>
+              <li><strong>Canal CTA:</strong> Botón directo WhatsApp + Formulario de consulta.</li>
+            </ul>
+          </div>
+
+          <div class="exec-card">
+            <h4>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M6 0.5a.5.5 0 0 1 .5.5v1h3V1a.5.5 0 0 1 1 0v1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h1V1a.5.5 0 0 1 .5-.5zM1 5v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5H1z"/>
+              </svg>
+              2. Gerencia IT
+            </h4>
+            <ul>
+              <li><strong>Tecnología:</strong> HTML5 semántico, CSS3 nativo responsive, Vanilla JS.</li>
+              <li><strong>Alojamiento:</strong> GitHub Pages / Vercel Free Tier ($0/año).</li>
+              <li><strong>Integración:</strong> Endpoint gratuito Web3Forms / API WhatsApp.</li>
+            </ul>
+          </div>
+
+          <div class="exec-card">
+            <h4>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M0 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3zm2-1a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1H2zm14 4H1v7a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6z"/>
+              </svg>
+              3. Compras & Finanzas
+            </h4>
+            <ul>
+              <li><strong>Hosting & SSL:</strong> $0.00 (Vercel / GitHub Pages).</li>
+              <li><strong>Formulario Backend:</strong> $0.00 (Web3Forms Free Plan - 250 envíos/mes).</li>
+              <li><strong>Dominio Opcional:</strong> NIC Argentina (.com.ar) para fase futura.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lead Capture / Contact Form Representation -->
+  <section id="contacto" class="bg-white">
+    <div class="container">
+      <div class="contact-card">
+        <div class="contact-grid">
+          <div class="contact-info-side">
+            <h3>Solicitar Asesoramiento Comercial</h3>
+            <p>
+              Déjenos su consulta para recibir detalles completos sobre disponibilidad de equipos, fichas técnicas y modelos de instalación en Argentina.
+            </p>
+
+            <div class="contact-method">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                </svg>
+              </div>
+              <div>
+                <strong>Atención Inmediata por WhatsApp</strong>
+                <div style="font-size: 0.9rem; color: var(--muted);">Respuesta comercial directa</div>
+              </div>
+            </div>
+
+            <div class="contact-method">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+              </div>
+              <div>
+                <strong>Cobertura de Prospección</strong>
+                <div style="font-size: 0.9rem; color: var(--muted);">República Argentina</div>
+              </div>
+            </div>
+
+            <div style="margin-top: 1.5rem;">
+              <a href="https://wa.me/5491100000000?text=Hola,%20busco%20asesoramiento%20para%20invertir%20en%20una%20maquina%20expendedora%20de%20hielo" class="btn btn-whatsapp btn-full" target="_blank" rel="noopener">
+                Iniciar Chat en WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <!-- Structured visual contact layout (Static HTML representation) -->
+            <div class="form-group">
+              <label class="form-label">Nombre y Apellido</label>
+              <input type="text" class="form-control" placeholder="Ej. Carlos Rodríguez" readonly>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Correo Electrónico</label>
+              <input type="email" class="form-control" placeholder="ejemplo@correo.com" readonly>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Teléfono / WhatsApp</label>
+              <input type="tel" class="form-control" placeholder="+54 9 11 1234-5678" readonly>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Ubicación de Interés (Provincia / Localidad)</label>
+              <input type="text" class="form-control" placeholder="Ej. Buenos Aires, Mendoza, Rosario..." readonly>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Consulta Principal</label>
+              <textarea class="form-control" rows="3" placeholder="Detalles de su consulta comercial..." readonly></textarea>
+            </div>
+
+            <a href="https://wa.me/5491100000000?text=Hola,%20deseo%20enviar%20mi%20consulta%20comercial" class="btn btn-primary btn-full" target="_blank" rel="noopener">
+              Enviar Consulta por WhatsApp
+            </a>
+
+            <p class="form-note">
+              Canal de atención comercial directo. No se requieren pagos ni suscripciones en este sitio.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating WhatsApp Action Button -->
+  <a href="https://wa.me/5491100000000?text=Hola,%20busco%20informacion%20sobre%20las%20maquinas%20expendedoras%20de%20hielo" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contacto por WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.572-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+    </svg>
+  </a>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+            </svg>
+            Glaciar Vending Argentina
+          </div>
+          <p style="font-size: 0.85rem; color: #94a3b8;">
+            Proyecto comercial de prueba de concepto para la comercialización de máquinas expendedoras automáticas de hielo. Landing desarrollada bajo arquitectura de $0 costo continuo en infraestructura web.
+          </p>
+        </div>
+
+        <div>
+          <h4 style="color: var(--white); margin-bottom: 0.75rem;">Secciones</h4>
+          <ul class="footer-links">
+            <li><a href="#beneficios">Beneficios</a></li>
+            <li><a href="#funcionamiento">Cómo Funciona</a></li>
+            <li><a href="#especificaciones">Especificaciones</a></li>
+            <li><a href="#ubicaciones">Ubicaciones</a></li>
+            <li><a href="#estrategia">Plan Técnico</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 style="color: var(--white); margin-bottom: 0.75rem;">Despliegue & Dominio</h4>
+          <ul class="footer-links">
+            <li><span style="color: #64748b;">Subdominio Free:</span></li>
+            <li><code style="color: var(--accent);">vending-hielo-arg.vercel.app</code></li>
+            <li><code style="color: var(--accent);">marca.github.io</code></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; Proyecto Landing Expendedoras de Hielo - Prototipo de Validación Comercial sin costo publicitario inicial.
+        </div>
+        <div>
+          <span class="badge badge-pending">Valores técnicos y financieros finales sujetos a confirmación de proveedor</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
